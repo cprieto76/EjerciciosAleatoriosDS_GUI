@@ -4,10 +4,10 @@ import random   # modulo para generar numeros aleatorios o escoger elementos de 
 diccionario_preguntas = {"uno": "pregunta 1", "dos": "pregunta 2", "tres": "pregunta 3", "cuatro": "pregunta 4",
                          "cinco": "pregunta 5"}
 lista_preguntas = []
-raiz = Tk()  # Esta funcionn del modulo tkinter crea una aplicacion tkinter. Crea una ventana nivel alto (top-level). La funcion retorna un objeto
-              #, asignado tipicamente a una variable
-raiz.title("preguntas")
+raiz = Tk()  # Esta funcion del modulo tkinter crea una aplicacion tkinter. Crea una ventana nivel alto (top-level). La funcion retorna 
+             #, un objeto asignado tipicamente a una variable
 
+  raiz.title("preguntas")
 
 def seleccion_preguntas():
     for numero in diccionario_preguntas:
