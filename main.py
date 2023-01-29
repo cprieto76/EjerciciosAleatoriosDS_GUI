@@ -9,7 +9,7 @@ raiz = Tk()  # Esta funcion del modulo tkinter crea una aplicacion tkinter. Crea
 
 raiz.title("preguntas") # title() es un metodo de la clase Tk que coloca titulo de la ventana
 
-def seleccion_preguntas():
+def seleccion_preguntas():                                       # Funcion
     for numero in diccionario_preguntas:
         lista_preguntas.append(numero)
     random_index = random.randint(0, len(lista_preguntas) - 1)   # randint() es una función incorporada del modulo random que retorna 
@@ -39,6 +39,10 @@ def click_boton_hita():
 
 boton_pregunta = Button(raiz, text="pregunta", padx=50, pady=25, command=click_boton_pregunta).grid(row=1, column=1)
 # La clase Button se utiliza para crear un widget de botón en el que el usuario puede hacer clic para realizar una acción.
+#Este código parece estar creando un widget de botón con el texto "pregunta" y colocándolo en un diseño de cuadrícula en la primera fila 
+# y la primera columna. El botón también se le da un ancho y alto de 50 y 25 píxeles respectivamente. El atributo de comando 
+# se establece en "click_boton_pregunta", lo que significa que cuando se hace clic en el botón, se llamará a 
+# la función "click_boton_pregunta".
 
 boton_hit = Button(raiz, text="hit!", padx=50, pady=25, command=click_boton_hita).grid(row=1, column=4)
 
